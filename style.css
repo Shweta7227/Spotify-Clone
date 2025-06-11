@@ -14,9 +14,10 @@
 }
 .sidebar
 {
-    background-color:#000000;
+    background-color:black;
     width: 340px;
     border-radius: 1rem;/*16px*/
+    margin-right:0.5rem;
 }
 .main-content
 {
@@ -25,6 +26,8 @@
     flex:1;/* isko cjod kr bakio ko utnijagah do jitna usme content hai , but muje saari jaagah do*/
     border-radius: 1rem;/*16px*/
     overflow: auto;
+     padding:2rem 1.5rem 0 1.5rem; 
+
 }
 .music-player
 {
@@ -102,12 +105,12 @@ a{
     background-color: #232323;
     height:8rem;
     border-radius: 0.75rem;
-    margin:0.5rem 0 0.5rem 0;
-    padding:1rem 1.25rem;
+    margin:0.75rem 0 1.75rem 0;
+    padding:1rem 2rem;
 }
 .box-p1
 {
-    font-size:1 rem;
+    font-size:1rem;
     font-weight: 700;
 }
 .box-p2
@@ -129,4 +132,110 @@ a{
     height: 2rem;
     width:fit-content;
     margin-bottom: 1rem;
+}
+.sticky-nav
+{
+    position: sticky;
+    top:0;
+    background-color: #121212;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding:1rem;
+    padding:1rem;
+}
+.right
+{
+    display: flex;
+    margin: 0.5rem;
+    align-items: center;
+     gap:1rem;
+    
+
+}
+#user{
+    color: white;
+    padding-top: 1.3rem;
+    margin-left: 1.75rem;
+    margin-top: 0.27em;
+    margin-right: 2rem;
+    background-color: black;
+  
+}
+
+#full
+{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    margin-top: 1rem;
+}
+#bd
+{
+    align-self: baseline;
+    color: white; 
+    font-size: 1rem;
+    padding-top:0.4rem; 
+    padding-right:0.9rem; 
+    
+}  
+
+.sticky-icons
+{
+    /* font-size: 2rem; */
+    /* height: 1rem;
+    width: 1rem;  */
+    margin-left: 0.75rem;
+    padding: auto;
+}
+#open
+{
+    margin-right:0.5rem;
+    height: 2rem;
+}
+#close
+{
+    height: 2rem;
+}
+.sticky-badge
+{
+    /* justify-content: space-between; */
+    display:flex;
+    gap:0.75rem;
+
+}
+@media(max-width: 1000px)
+{
+    #hide{
+        display: none;
+    }
+    .pre{
+        display: none;
+    }
+}
+.card
+{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding:1rem;
+}
+.card-container{
+    display:flex;
+    /* line-height: 1.7rem; */
+
+}
+.card img
+{
+    width:100%; 
+    border-radius: 0.5rem;
+
+}
+.title{
+    top:2rem;
+    font-weight: 900;
+    /* line-height: 1.5rem; */
+}
+.info{
+    font-size:0.85rem;
+    opacity:0.5;
 }

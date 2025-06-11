@@ -13,7 +13,7 @@
     <title>Spotify -Web Player: Music for everyone</title>
 </head>
 <body>
-    <div class="main" style="background-color: yellow">
+    <div class="main" style="background-color: black">
         <div class="sidebar">
             <div class="nav">
                 <div class="nav-option" style="opacity:1;">
@@ -39,15 +39,52 @@
                 </div>
                 <div class="lib-box">
                     <div class="box">
-                        <p class="box-p1">Create you first playlist</p>
-                        <p class="boc-p2">it's easy will will help you</p>
+                        <pre class="box-p1">Create you first playlist</pre>
+                        <br>
+                        <pre class="boc-p2">it's easy will will help you</pre>
+                        <br>
                         <button class="badge">Create playlist</button>
+                    </div>
+                    <div class="box">
+                        <pre class="box-p1">Let's find some podast to follow</pre>
+                        <br>
+                        <pre class="boc-p2">We'll keep you updated on new episodes</pre>
+                        <br>
+                        <button class="badge">Browse Podcasts</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="main-content">
-            main content
+        <div class="main-content" >
+            <div class="sticky-nav">
+                <div class="sticky-icons">
+                    <img src="./assets/backward_icon.png" alt="back icon" class="open ">
+                    <img src="./assets/forward_icon.png" alt="opposite icon" id="hide">
+                </div>
+                <div class="right">
+                    <div class="sticky-badges">
+                        <button  class="badge pre">Explore Premium</button>
+                        <button class="badge" id="full" ><i class="fa-regular fa-circle-down " id="bd"></i>Install App</button>
+                    </div>
+                    <div class="users">
+                        <i class="fa-regular fa-user" id="user" ></i>    
+                    </div>
+                </div>
+                
+                
+
+            </div>
+            <div class="cards">
+                <h2>Recently Played</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./assets/card1img.jpeg" alt="1">
+                        <p class="tile">Top 50 -Global</p>
+                        <br>
+                        <p class="info">Your daily updates of the most played...</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="music-player">
             music player
