@@ -63,8 +63,9 @@
                 </div>
                 <div class="right">
                     <div class="sticky-badges">
-                        <button  class="badge pre">Explore Premium</button>
-                        <button class="badge" id="full" ><i class="fa-regular fa-circle-down " id="bd"></i>Install App</button>
+                        <button  id="badge1">Explore Premium</button>
+                        <button id="badge2"><i class="fa-regular fa-circle-down " id="bd" style="padding-top: 0.01rem; padding-left: 0.25rem;"></i>Install App</button> 
+                        <!--  -->
                     </div>
                     <div class="users">
                         <i class="fa-regular fa-user" id="user" ></i>    
@@ -74,20 +75,116 @@
                 
 
             </div>
-            <div class="cards">
+            <div class="below">
+               
                 <h2>Recently Played</h2>
-                <div class="card-container">
-                    <div class="card">
-                        <img src="./assets/card1img.jpeg" alt="1">
-                        <p class="tile">Top 50 -Global</p>
-                        <br>
-                        <p class="info">Your daily updates of the most played...</p>
+                    <div class="card-container">
+                       <div class="card">
+                            <img src="./assets/card1img.jpeg" alt="1">
+                            <h3 class="tile" style="padding-top: 1rem; padding-bottom: 1rem;">Top 50 -Global</h3>
+                            
+                            <p class="info">Your daily updates of the most played...</p>
+                        </div>
                     </div>
+
+                     <h2>Trending now near you</h2>
+                    <div class="card-container">
+                       <div class="card">
+                            <img src="./assets/card2img.jpeg" alt="1">
+                            <h3 class="tile" style="padding-top: 1rem; padding-bottom: 1rem;">Top 50 -Global</h3>
+                            <p class="info">Your daily updates of the most played...</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/card3img.jpeg" alt="2">
+                            <h3 class="tile" style="padding-top: 1rem; padding-bottom: 1rem;">Top 50 -Global</h3>                            
+                            <p class="info">Your daily updates of the most played...</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/card4img.jpeg" alt="3">
+                            <h3 class="tile" style="padding-top: 1rem; padding-bottom: 1rem;">Top 50 -Global</h3>                           
+                            <p class="info">Your daily updates of the most played...</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/card2img.jpeg" alt="3">
+                            <h3 class="tile" style="padding-top: 1rem; padding-bottom: 1rem;">Top 50 -Global</h3>                           
+                            <p class="info">Your daily updates of the most played...</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/card3img.jpeg" alt="3">
+                            <h3 class="tile" style="padding-top: 1rem; padding-bottom: 1rem;">Top 50 -Global</h3>                           
+                            <p class="info">Your daily updates of the most played...</p>
+                        </div>
+                    </div>
+                    
+                    <h2>Featured Charts</h2>
+                    <div class="card-container">
+                       <div class="card">
+                            <img src="./assets/card5img.jpeg" alt="1">
+                            <h3 class="tile" style="padding-top: 1rem; padding-bottom: 1rem;">Top 50 -Global</h3>
+                            
+                            <p class="info">Your daily updates of the most played...</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/card6img.jpeg" alt="1">
+                            <h3 class="tile" style="padding-top: 1rem; padding-bottom: 1rem;">Top 50 -Global</h3>
+                            
+                            <p class="info">Your daily updates of the most played...</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/card1img.jpeg" alt="1">
+                            <h3 class="tile" style="padding-top: 1rem; padding-bottom: 1rem;">Top 50 -Global</h3>
+                            
+                            <p class="info">Your daily updates of the most played...</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="footer">
+                <div class="line">
+                    <hr>
                 </div>
             </div>
         </div>
         <div class="music-player">
-            music player
+            <div class="album">
+                
+                <img src="Homework Assets/album_picture.png" alt="h1" class="photo">
+                <div class="name">
+                    <h4>The Greatest</h4>
+                    <p>Sia</p>
+                </div>
+                
+                <img src="Homework Assets/album_icon1.png" alt="heart" class="heart">
+                <img src="Homework Assets/album_icon2.png" alt="show" class="show">
+            </div>
+            <div class="player">
+                <div class="play-controls">
+                    <img src="assets/player_icon1.png" alt="p1" class="player-icon">
+                    <img src="assets/player_icon2.png" alt="p1" class="player-icon">
+                    <img src="assets/player_icon3.png" alt="p1" class="player-icon" style="opacity:1; height:2rem;">
+                    <img src="assets/player_icon4.png" alt="p1" class="player-icon">
+                    <img src="assets/player_icon5.png" alt="p1" class="player-icon">
+                </div>
+                <div class="playbackbar">
+                    <span class="cur-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progressbar" step="1">
+                    <span class="fin-time">33:33</span>
+
+                </div>
+            </div>
+            <div class="control">
+                <img src="Homework Assets/controls_icon1.png" alt="c1" class="c1">
+                <img src="Homework Assets/controld_icon2.png" alt="c1" class="c2">
+                <img src="Homework Assets/controls_icon3.png" alt="c1" class="c3">
+                <img src="Homework Assets/controls_icon4.png" alt="c1" class="c4">
+                <img src="Homework Assets/controls_icon5.png" alt="c1" class="c5">
+                <input type="range" min="0" max="100" step="1" class="vol">
+            </div>
         </div>
     </div>
 </body>

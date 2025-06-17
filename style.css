@@ -21,17 +21,17 @@
 }
 .main-content
 {
-    background-color:#121212;
+    background-color:#000000;
 
     flex:1;/* isko cjod kr bakio ko utnijagah do jitna usme content hai , but muje saari jaagah do*/
     border-radius: 1rem;/*16px*/
     overflow: auto;
-     padding:2rem 1.5rem 0 1.5rem; 
+     padding:0rem 0rem 1.5rem 0rem; 
 
 }
 .music-player
 {
-    background-color:black;
+    background-color:rgb(0, 0, 0);
     position: fixed;
     height: 72px;
     bottom: 0;
@@ -121,54 +121,80 @@ a{
 }
 .badge
 {
-    background-color: white;
+     background-color: white;
     color: black;
     border:none;
     border-radius: 100px;
     font-weight: 700;
     margin-top:0.5rem;
     font-size:0.85rem;
-    padding:0.25rem 1rem;
+    padding:0.5rem 1rem;
     height: 2rem;
     width:fit-content;
     margin-bottom: 1rem;
+}
+#badge1
+{
+    background-color: white;
+    color: black;
+    border:none;
+    border-radius: 100px;
+    font-weight: 700;
+    /* margin-top:0.5rem; */
+    font-size:0.85rem;
+    padding:0.5rem 1rem;
+    height: 2rem;
+    width:fit-content;
+    /* margin-bottom: 1rem; */
+}
+#badge2
+{
+    background-color: rgb(0, 0, 0);
+    color:white;
+    border:none;
+    font-weight: 700;
+    border-radius: 100px;
+    height: 2rem;
+    padding:0.5rem 1rem;
+
+    /* margin-top: 1.25rem; */
 }
 .sticky-nav
 {
     position: sticky;
     top:0;
-    background-color: #121212;
+    background-color:#121212;
     align-items: center;
     display: flex;
+    height: 3.5rem;
     justify-content: space-between;
-    padding:1rem;
-    padding:1rem;
+    /* padding:1rem; */
+    /* padding:1rem; */
+    /* padding-bottom: 1rem; */
+     /* margin-bottom: 2rem; */
+     z-index: 1;
+
 }
 .right
 {
     display: flex;
     margin: 0.5rem;
     align-items: center;
-     gap:1rem;
-    
+    /* gap:1rem; */
 
 }
 #user{
     color: white;
-    padding-top: 1.3rem;
+    /* padding-top: 1.3rem; */
     margin-left: 1.75rem;
     margin-top: 0.27em;
     margin-right: 2rem;
-    background-color: black;
+    /* background-color: black; */
+    align-self:baseline;
   
 }
 
-#full
-{
-    background-color: rgb(0, 0, 0);
-    color:white;
-    margin-top: 1rem;
-}
+
 #bd
 {
     align-self: baseline;
@@ -181,9 +207,7 @@ a{
 
 .sticky-icons
 {
-    /* font-size: 2rem; */
-    /* height: 1rem;
-    width: 1rem;  */
+   
     margin-left: 0.75rem;
     padding: auto;
 }
@@ -198,19 +222,25 @@ a{
 }
 .sticky-badge
 {
-    /* justify-content: space-between; */
     display:flex;
-    gap:0.75rem;
-
 }
 @media(max-width: 1000px)
 {
     #hide{
         display: none;
     }
-    .pre{
+    #badge1{
         display: none;
     }
+}
+.below
+{
+    padding-left:2rem;
+}
+.below h2{
+    margin-bottom: 2rem;
+    font-weight: 800;
+    padding-top:2rem;
 }
 .card
 {
@@ -218,12 +248,18 @@ a{
     width: 150px;
     border-radius: 0.5rem;
     padding:1rem;
+    margin-right:1.5rem;
+    margin-bottom: 1.5rem;;
 }
 .card-container{
     display:flex;
+    flex-wrap: wrap;
+    /* margin-right: 2rem; */
+    /* justify-content:space-; */
     /* line-height: 1.7rem; */
 
 }
+
 .card img
 {
     width:100%; 
@@ -231,11 +267,219 @@ a{
 
 }
 .title{
-    top:2rem;
+    /* padding-top:2.5rem; */
+    margin-top: 2rem;;
     font-weight: 900;
     /* line-height: 1.5rem; */
 }
 .info{
+    font-weight:600;
     font-size:0.85rem;
     opacity:0.5;
 }
+.footer
+{
+    height: 300px;
+}
+.line hr
+{
+    margin-top: 6rem;
+    opacity: 0.5;
+    /* display: flex; */
+    /* align-items: center; */
+}
+
+
+.player{
+    width:50%;
+}
+
+.player-icon
+{
+    height: 1rem;
+    margin-right:1rem;
+    opacity:0.7;
+
+}
+.player-icon:hover{
+    opacity:1;
+}
+.play-controls
+{
+    padding-top: 0.75rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.playbackbar
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.25rem;
+    padding-left: 0.25rem;
+    margin-left: 0.25rem;
+    /* align-items: baseline; */
+}
+.progressbar
+{
+    width: 55%;
+    /* appearance property is property used to change the by default css /ui of a component like button/radio btn etc */
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+/* range bar is divided into 2 parts: track and thumb (node in range which move back and fro)to change them there are 2 pesudo-elements 
+ 1> webkit-slider-thumb adn 2>webkit-slider-runnable-track  ....... these are browser dependent  */
+ .progressbar::-webkit-slider-runnable-track
+ {
+    background-color:  #ddd;   
+    border-radius:100px;
+    height:0.2rem;
+ }
+ .progressbar::-webkit-slider-thumb
+ {
+    appearance: none;
+    height: 1rem;
+    width:1rem;
+    background-color:#1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+   
+ }
+ .music-player
+{
+    display:flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: #000000;
+}
+ .album
+{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    width:25%;
+
+}
+.album .photo
+{
+    margin-left:0.5rem;
+    height:4rem;
+    width:4rem;
+    border-radius: 5px;
+}
+
+.album .name
+{
+    margin-left:1rem;
+
+}
+.album .name p
+{
+    font-weight:700;
+    opacity:0.5;
+}
+.album .heart
+{
+    margin-left:1rem;
+    opacity:0.7;
+
+}
+.album .heart:active{
+    color: #1bd760;
+}
+.album .show
+{
+    margin-left:1rem;
+
+    height:2.75rem;
+    width: 1.9rem;
+    opacity:0.7;
+    background-color: none;
+
+}
+.control
+{
+    width:30%;
+    display:flex;
+    align-items: center;
+    padding-left: 6rem;
+    opacity:0.7;
+    /* background-color:rgb(0, 0, 0); */
+    overflow: visible;
+}
+.control .c1
+{
+    height: 3.5rem;
+    width: 3rem;
+    opacity:0.8;
+    padding-left: 0rem;
+    /* margin-left: 0; */
+    margin-right: 1rem;
+}
+.control .c2
+{
+    height: 3.5rem;
+    width: 3rem;
+    opacity: 0.9;
+    margin-right: 1rem;
+
+
+}
+.control .c3
+{
+    height: 2.5rem;
+    width: 2.75rem;
+    opacity: 0.5;
+    margin-right: 1rem;
+
+}
+.control .c4
+{
+    height: 2rem;
+    width: 2.75rem;
+    opacity: 0.5;
+    margin-right: 1rem;
+
+
+}
+.control .c5
+{
+    height: 4rem;
+    width: 3rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+
+
+}
+
+.control .c1:hover{
+    opacity:1;
+    /* cursor: pointer; */
+}
+.control .c2:hover{
+    opacity:1;
+   
+}
+.control .c3:hover{
+    opacity:1;
+   
+}
+.control .c4:hover{
+    opacity:1;
+   
+}
+.control .c5:hover{
+    opacity:1;
+   
+}
+
+.vol{
+    width: 30%;
+    /* appearance: none; */
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1;
+    /* height: ; */
+}
+
